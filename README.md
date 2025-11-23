@@ -37,7 +37,61 @@ Then virtualization (VMware, Hyper-V) → one physical server runs many VMs → 
 **Now we use containerization (Docker):**
 
 Our focus is only the application → no need to manage hardware or full OS
+
 Virtualization = focus on hardware/infra/OS
+
 Containerization = focus only on the application and its dependencies
+
 Containers are very lightweight (share the host OS kernel)
-Each container is isolated, starts in seconds, and runs exactly the same everywhere
+Each container is isolated, starts in seconds, and runs exactly the same everywhere.
+
+Port 80 → default HTTP (web traffic)
+Port 8080 → second/alternative HTTP port for web applications
+
+**Docker file** -- This is all about the instructions - What ever we need to build we mention in the docker file.
+
+**Application source code + dependencies are written (defined) in the Dockerfile**
+
+Dockerfile = Instructions to build an image
+
+Workflow:
+
+**Dockerfile → Build → Image → Registry → (We will deploy into Dev/QA/ PROD) Deploy as Containers**
+
+Dockerfile: Contains instructions (source code + dependencies)
+
+Build: Docker reads the Dockerfile and creates an image
+
+Image: Packaged application
+
+Registry: Storage to upload and share images
+
+Containers: Deployed/running instances created from the image
+
+Image = Package
+
+Container = Running instance of image
+
+**Docker is called as container runtime**
+
+----> Docker helps developers build, share, run, and verify applications anywhere — without tedious environment configuration or management.
+
+**Docker → Dockerfile → Image → Container**
+
+
+**Dockerfile (docker build) → Image (docker push) → Registry → Container (docker run) → Application runs as per Dockerfile instructions**
+
+
+**Docker objects:**
+
+Images → Packaged application (read-only template)
+
+Containers → Running instances of images
+
+Dockerfile → Instructions to build an image
+
+Volumes → Persistent storage for containers
+
+Networks → Communication between containers
+
+Registry → Storage for Docker images (Docker Hub, ECR, etc.)
