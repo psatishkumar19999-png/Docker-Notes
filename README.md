@@ -31,7 +31,7 @@ What dependencies it needs
 
 **In the old days we deployed like this:**
 
-Bare metal servers → we managed hardware + OS + app ourselves (too much work)
+* Bare metal servers → we managed hardware + OS + app ourselves (too much work)
 Then virtualization (VMware, Hyper-V) → one physical server runs many VMs → better, but still heavy because each VM has its own full OS
 
 **Now we use containerization (Docker):**
