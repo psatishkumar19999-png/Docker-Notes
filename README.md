@@ -17,6 +17,12 @@ Between Build and Deploy we do these steps:
 The build tool creates one ready file – we call this file an artifact (example: .jar, .war, .zip, package with node_modules, binary file, etc.)
 This artifact contains the code + all dependencies in one package.
 
+**Artifacts:**
+Artifacts are the output files generated during a build or development process — for example, executables, libraries, JAR files, Docker images, or configuration bundles.
+
+**Dependencies:**
+Dependencies are external components, libraries, or packages that a project needs in order to run or build successfully.
+
 --> To deploy properly, we must know:
 
 Which language the app is using
