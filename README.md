@@ -95,3 +95,71 @@ Volumes → Persistent storage for containers
 Networks → Communication between containers
 
 Registry → Storage for Docker images (Docker Hub, ECR, etc.)
+
+------------------------------------------------------------------------
+
+* Docker commands
+
+docker version → Check Docker version
+docker info → Show Docker system info
+docker images → List all images
+docker pull <image> → Download image from registry
+docker build -t <name> . → Build image from Dockerfile
+docker rmi <image> → Remove an image
+
+docker run <image> → Run a container
+docker run -d <image> → Run container in background
+docker run -p 8080:80 <image> → Map host port to container port
+docker run -v host:container → Mount a volume
+
+**docker ps → List running containers
+docker ps -a → List all containers (running + stopped)**
+
+docker stop <id> → Stop a running container
+docker start <id> → Start a stopped container
+docker rm <id> → Delete a container
+
+docker logs <id> → View container logs
+docker exec -it <id> bash → Enter shell inside container
+
+docker tag <src> <target> → Tag an image
+docker login → Login to registry
+docker push <image> → Push image to registry
+
+docker container prune → Remove stopped containers
+docker image prune → Remove unused images
+docker system prune → Clean everything unused
+
+---------------------------------------------
+
+**Docker Daemon--**
+
+• Docker daemon is the main service that runs in the background.
+• It is responsible for creating, running, and managing containers.
+• When you type any docker command, it goes to the daemon.
+• The daemon does the real work: pull images, build images, start containers, stop containers, etc.
+• The CLI (commands) is just a messenger → the daemon is the worker.
+• The daemon’s process name is dockerd.
+-----------------------------------------------------
+
+**Container -**
+• A container runs only as long as its main process is running.
+• When the process finishes, the container automatically stops (exits).
+
+Example
+
+When you run:
+docker run hello-world
+
+Docker creates a container using the hello-world image
+
+It runs a tiny script inside it
+
+The script prints a message
+
+The script ends → the container exits
+
+So, the container does its job → stops → stays in docker ps -a
+----------------------------------------------------------------------
+
+
