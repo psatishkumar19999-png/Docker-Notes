@@ -162,12 +162,19 @@ The script ends → the container exits
 So, the container does its job → stops → stays in docker ps -a
 ----------------------------------------------------------------------
 
-**Docker Objects 
-**
+**Docker Objects**
 1. Dockerfile → Instructions to build an image
 2. Image → Blueprint/template of an application
 3. Container → Running instance created from an image
 4. Volume → Stores data permanently
 5. Network → Lets containers communicate
+
+----------------------------------------------------------------------
+**Container Behavior**
+
+• A container runs only while its main process is running.
+• Each image defines what process should run inside the container.
+(Some images have a long-running process, some don’t.)
+• If the image does NOT have a long-running process, the container starts, finishes the task, and then exits automatically.
 
 
