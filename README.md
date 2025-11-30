@@ -162,4 +162,12 @@ The script ends → the container exits
 So, the container does its job → stops → stays in docker ps -a
 ----------------------------------------------------------------------
 
+**Docker Objects 
+**
+1. Dockerfile → Instructions to build an image
+2. Image → Blueprint/template of an application
+3. Container → Running instance created from an image
+4. Volume → Stores data permanently
+5. Network → Lets containers communicate
+
 
