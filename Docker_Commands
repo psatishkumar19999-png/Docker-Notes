@@ -1,1 +1,31 @@
+* Docker commands
 
+docker version → Check Docker version
+docker info → Show Docker system info
+docker images → List all images
+docker pull <image> → Download image from registry
+docker build -t <name> . → Build image from Dockerfile
+docker rmi <image> → Remove an image
+
+docker run <image> → Run a container
+docker run -d <image> → Run container in background
+docker run -p 8080:80 <image> → Map host port to container port
+docker run -v host:container → Mount a volume
+
+**docker ps → List running containers
+docker ps -a → List all containers (running + stopped)**
+
+docker stop <id> → Stop a running container
+docker start <id> → Start a stopped container
+docker rm <id> → Delete a container
+
+docker logs <id> → View container logs
+docker exec -it <id> bash → Enter shell inside container
+
+docker tag <src> <target> → Tag an image
+docker login → Login to registry
+docker push <image> → Push image to registry
+
+docker container prune → Remove stopped containers
+docker image prune → Remove unused images
+docker system prune → Clean everything unused
