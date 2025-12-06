@@ -29,3 +29,23 @@ docker push <image> → Push image to registry
 docker container prune → Remove stopped containers
 docker image prune → Remove unused images
 docker system prune → Clean everything unused
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Docker run VS Docker run -d
+
+docker run httpd →
+Runs the Apache server in the foreground. Logs show on screen, and the terminal stays busy.
+--> Here the whatever 
+
+docker run -d httpd →
+Runs the Apache server in the background (detached mode). The container keeps running, and your terminal is free.
+====================================================================================
+Docker -it - allows you to interact with the container’s shell (terminal)
+-i -- interactive
+-t -- terminal 
+
+
+
+
+
+
