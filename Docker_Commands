@@ -43,6 +43,10 @@ Runs the Apache server in the background (detached mode). The container keeps ru
 Docker -it - allows you to interact with the container’s shell (terminal)
 -i -- interactive
 -t -- terminal 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Docker ps -aq
+it will show you the list of conatiner ids
+----------------------------------------------------------------------------
 
 
 
