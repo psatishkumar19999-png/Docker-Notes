@@ -142,4 +142,14 @@ So, the container does its job → stops → stays in docker ps -a
 (Some images have a long-running process, some don’t.)
 • If the image does NOT have a long-running process, the container starts, finishes the task, and then exits automatically.
 
+--------------------------------------------------------------------
+
+**Points to remember in container **
+* Image ( which image is using)
+*container id or container name
+*process ( Which process is running inside)
+
+-------------------------------------------------------------------
+  
+
 
