@@ -145,6 +145,7 @@ So, the container does its job → stops → stays in docker ps -a
 --------------------------------------------------------------------
 
 **Points to remember in container **
+
 * Image ( which image is using)
 *container id or container name
 *process ( Which process is running inside)
