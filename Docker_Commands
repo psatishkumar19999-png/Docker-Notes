@@ -47,6 +47,54 @@ Docker -it - allows you to interact with the container’s shell (terminal)
 Docker ps -aq
 it will show you the list of conatiner ids
 ----------------------------------------------------------------------------
+Docker exec
+
+--> If you have a running container and you want to get inside it → use docker exec -it.
+
+--> docker run -it ubuntu creates a new container and gives you a shell.
+
+--> docker exec -it containername /bin/bash attaches a new terminal to an already running container.
+
+--> The container’s main running process stays the same. exec does not replace it — exec only adds another session.
+
+--> It dosent attach to the primary process rather it starts a secondary process id.
+----------------------------------------------------------------------------------------------------
+docker container cp 143:/satish.txt .      (copy the file satish.txt from container 143 to my current folder.)
+
+docker container cp  --->
+This command is used to copy files between a container and your local machine.
+
+143 -->
+This is the container name or container ID.
+
+:/satish.txt --->
+This is the path inside the container.
+It means the file satish.txt is located at the root directory inside container.
+
+. -->
+The dot (.) means copy the file to the current folder on your local machine.
+==========================================================================================
+Copy a file from host → inside the container
+
+(docker container cp satish.txt 143:/satish1.txt)
+Meaning (Simple):
+satish.txt → file on your local machine
+
+143 → your container ID or name
+
+/satish1.txt → location inside the container
+
+What it does:
+
+It copies satish.txt from your system INTO the container with the new name satish1.txt.
+====================================================================================================
+If you want to see file is present or not in container use below will show you 
+
+docker exec -it 143 ls -l /
+
+/ means root
+
+========================================================================
 
 
 
