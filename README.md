@@ -153,6 +153,28 @@ So, the container does its job → stops → stays in docker ps -a
 3.process ( Which process is running inside)
 
 -------------------------------------------------------------------
+Top 2 images we use widely 
+**1.BusyBox**
+
+-->Very small Linux image (few MB)
+
+-->Contains basic Linux commands in a single executable
+
+-->Used mainly for testing, debugging, lightweight scripting
+
+-->Not for running full applications (minimal features)
+
+**2.Alpine**
+
+-->Also very lightweight (≃5 MB)
+
+-->Based on musl libc + busybox
+
+-->Has package manager (apk) → can install additional software
+
+-->Secure and optimized → popular for production apps
+-----------------------------------------------------------------------------
+ 
   
 
 
