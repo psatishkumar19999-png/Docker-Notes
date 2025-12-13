@@ -172,7 +172,6 @@ Top 2 images we use widely
 
 -->Has package manager (apk) → can install additional software
 
--->Secure and optimized → popular for production apps
 -----------------------------------------------------------------------------
  
   
