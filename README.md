@@ -173,7 +173,19 @@ Top 2 images we use widely
 -->Has package manager (apk) → can install additional software
 
 -----------------------------------------------------------------------------
+**JAR FILE:-**
  
-  
+ A JAR (Java ARchive) file packages your entire Java application — code, libraries, and resources — into a single executable bundle.
+It is used when running or deploying Java-based applications like Spring Boot or microservices.
 
+**YAML File**
+Meaning:
+YAML is a human-readable configuration file used to define settings, infrastructure, or application behavior (like Docker, Kubernetes, CI/CD).
+
+Used When:
+Creating configurations for deployments, Kubernetes manifests, Docker Compose, pipelines, and infrastructure-as-code.
+
+**JAR = build artifact
+
+YAML = deployment artifact**
 
