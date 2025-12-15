@@ -189,7 +189,7 @@ Creating configurations for deployments, Kubernetes manifests, Docker Compose, p
 
 YAML = deployment artifact**
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 **Docker Image Tags**
 
@@ -203,3 +203,33 @@ gcr.io/my-project/myapp:1.0
 
 
 This format tells Docker from where to pull the image, whose image it is, what image, and which version.
+
+=========================================================================================
+
+**Difference between Host Port and Container Port**
+
+Container Port
+The port on which the application runs inside the container.
+It is internal to Docker and not directly accessible from outside unless mapped.
+
+Host Port
+The port on the Docker host machine that is exposed to users.
+It forwards traffic to the container port.
+
+docker run -p 8080:80 nginx
+80 → Container port (nginx runs here)
+
+8080 → Host port (users access via browser)
+
+In short:
+Host Port = Outside access
+Container Port = Inside container app port and below 
+
+**For port mapping, we use the concept called:**
+Port Mapping (or Port Binding)
+
+Port mapping connects a host port to a container port.
+
+It allows external users to access the application running inside a container.
+
+================================================================================
