@@ -1,0 +1,48 @@
+User
+ |
+ |  https://example.com
+ v
+DNS
+ |
+ v
+Load Balancer
+ |
+ v
+Ingress
+ |
+ v
+Service (Port 80)
+ |
+ v
+Container (Port 8080)
+ |
+ v
+Application
+
+Explanation:
+
+1.User hits URL (example: 1279.com)
+This is the public domain the user types in the browser.
+
+2.DNS Map
+DNS maps the domain name to the Load Balancer IP.
+
+3.Load Balancer (LB)
+LB receives the request from the internet and forwards it to Kubernetes.
+
+4.Ingress
+Ingress decides which service should receive the request based on rules (host/path).
+
+5.Service
+Service exposes the application inside the cluster and forwards traffic to pods.
+
+6.Service Port: 80
+
+Target Port: 8080
+
+7.Container (inside Pod)
+The actual application runs inside the container.
+
+Application listens on 8080
+
+Container runs the process
