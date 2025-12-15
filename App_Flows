@@ -1,3 +1,71 @@
++-------------+
+| Source Code |
+| (Developer) |
++-------------+
+        |
+        v
++-------------+
+|  Artifact   |
+| (JAR/Binary)|
++-------------+
+        |
+        v
++-------------+
+| Dockerfile  |
++-------------+
+        |
+        v
++-------------+
+| Docker Image|
++-------------+
+        |
+        v
++-------------+
+|  Registry   |
++-------------+
+        |
+        v
++----------------------+
+| Container (Host/VM)  |
+| Application Running  |
++----------------------+
+
+
+Explanation below:
+Application Flow 
+
+Source Code (Developer)
+The developer writes application source code (Java, Node, Python, etc.).
+
+Artifact
+The source code is compiled or packaged into an artifact (for example: JAR, WAR, binary).
+This artifact is the deployable output of the application.
+
+Dockerfile
+A Dockerfile defines how the application should run:
+
+Base OS or runtime
+
+Copy artifact
+
+Install dependencies
+
+Define startup process (CMD / ENTRYPOINT)
+
+Docker Image
+Using the Dockerfile, Docker builds an immutable image.
+The image contains the application, runtime, libraries, and configuration.
+
+Registry
+The Docker image is pushed to a registry (Docker Hub, ECR, GCR, ACR).
+This allows sharing and deployment across environments.
+
+Container (Host)
+The image is pulled from the registry and run as a container on a host machine.
+The container runs the application process and serves traffic.
+
+
+======================================================================================================
 User
  |
  |  https://example.com
