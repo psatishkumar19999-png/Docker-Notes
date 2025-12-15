@@ -189,3 +189,17 @@ Creating configurations for deployments, Kubernetes manifests, Docker Compose, p
 
 YAML = deployment artifact**
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+**Docker Image Tags**
+
+Docker image tags are used to identify different versions of the same image.
+They help you control which exact image version you want to run (for stability, rollback, and consistency).
+
+Format:
+registry/useraccountname/reponame:tagname
+myacr.azurecr.io/myapp:1.0
+gcr.io/my-project/myapp:1.0
+
+
+This format tells Docker from where to pull the image, whose image it is, what image, and which version.
