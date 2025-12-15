@@ -95,6 +95,10 @@ docker exec -it 143 ls -l /
 / means root
 
 ========================================================================
+If you want to see full details of container use below 
+
+-->  docker container inspect containerid
+-->  kubectl describe podname
 
 
 
