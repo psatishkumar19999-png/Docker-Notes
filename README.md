@@ -233,3 +233,11 @@ Port mapping connects a host port to a container port.
 It allows external users to access the application running inside a container.
 
 ================================================================================
+
+Containers are temporary(Ephemeral), volumes are permanent
+
+*Docker volumes*
+
+
+
+
