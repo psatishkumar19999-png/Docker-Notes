@@ -238,6 +238,47 @@ Containers are temporary(Ephemeral), volumes are permanent
 
 *Docker volumes*
 
+1.Bind Mounts
+A bind mount directly maps a host directory/file into a container.
+
+When to use
+
+Local development
+Live code changes (no rebuild needed)
+Debugging
+
+**Real-life analogy**
+Container reading files directly from your laptop folder
+
+2. tmpfs Mounts
+
+A tmpfs mount stores data only in memory (RAM) and never writes to disk.
+
+**When to use**
+
+Temporary data
+Sensitive data (tokens, passwords)
+High-speed cache
+
+**Real-life analogy**
+Writing on a whiteboard — once erased (container stops), everything is gone.
+
+**3. Docker Volumes**
+
+A Docker volume is Docker-managed storage that exists independently of containers.
+
+**When to use**
+Databases
+Application logs
+Production workloads
+Data that must persist across container restarts
+
+**Real-life analogy**
+An external hard disk attached to containers — data remains even if the container is deleted.
+
+==========================================================================================================
+
+
 
 
 
