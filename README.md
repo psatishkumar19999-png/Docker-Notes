@@ -276,7 +276,20 @@ Data that must persist across container restarts
 **Real-life analogy**
 An external hard disk attached to containers — data remains even if the container is deleted.
 
-==========================================================================================================
+====================================================================================
+
+Docker build cache (why next builds are faster)
+
+Docker reuses layers from cache
+If instructions and files don’t change, layers are reused
+That’s why rebuilding the same image is very fast
+
+**ImagePullBackOff (in Kubernetes context)**
+
+Happens when Kubernetes cannot pull the image
+Image name or tag is wrong
+Image does not exist in registry
+Image is private and no credentials are provided
 
 
 
